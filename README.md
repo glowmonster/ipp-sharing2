@@ -1,5 +1,9 @@
 # IPP Sharing
 
+> 🍴 **Forked from [ArcticLampyrid/ipp-sharing](https://github.com/ArcticLampyrid/ipp-sharing)**  
+> Original author: [alampy.com](https://alampy.com) — Copyright (C) 2024-2025  
+> This fork adds **Windows 7 compatibility** via proxy DLLs and binary patches.
+
 A lightweight tool to share local Windows printers driverlessly via IPP protocol. While ideal for home users, it may not suit enterprise environments due to the absence of advanced features like color management, custom paper sizes, user authentication, and audit logging.
 
 This is a Windows-only tool. For Linux and macOS, CUPS is recommended for IPP-based printer sharing.
