@@ -1,0 +1,11 @@
+/target
+test_outputs
+
+# Win7 stubs and build tools — keep these
+!/stubs/
+!/build_stubs.ps1
+!/patch_ipp.py
+!/ws2hook.c
+!/ws2hook_mingw.c
+!/ws2hook.def
+!/wsh_32.dll

@@ -1,0 +1,7 @@
+LIBRARY "combase"
+EXPORTS
+    ; === 我们自己实现 ===
+    CoIncrementMTAUsage
+
+    ; === 转发给 ole32.dll（Win7 上的 COM 大本营）===
+    CoCreateFreeThreadedMarshaler=ole32.CoCreateFreeThreadedMarshaler

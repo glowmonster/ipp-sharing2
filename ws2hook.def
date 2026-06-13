@@ -1,0 +1,42 @@
+LIBRARY wsh_32
+EXPORTS
+    GetHostNameW
+
+    ; Forward all ws2_32 functions that ipp-sharing actually uses
+    WSACleanup=WS2_32.WSACleanup
+    WSAStartup=WS2_32.WSAStartup
+    freeaddrinfo=WS2_32.freeaddrinfo
+    getaddrinfo=WS2_32.getaddrinfo
+    select=WS2_32.select
+    WSADuplicateSocketW=WS2_32.WSADuplicateSocketW
+    WSAGetLastError=WS2_32.WSAGetLastError
+    WSAIoctl=WS2_32.WSAIoctl
+    WSAPoll=WS2_32.WSAPoll
+    WSARecv=WS2_32.WSARecv
+    WSARecvFrom=WS2_32.WSARecvFrom
+    WSASend=WS2_32.WSASend
+    WSASendMsg=WS2_32.WSASendMsg
+    WSASendTo=WS2_32.WSASendTo
+    WSASocketW=WS2_32.WSASocketW
+    accept=WS2_32.accept
+    bind=WS2_32.bind
+    closesocket=WS2_32.closesocket
+    connect=WS2_32.connect
+    getpeername=WS2_32.getpeername
+    getsockname=WS2_32.getsockname
+    getsockopt=WS2_32.getsockopt
+    htonl=WS2_32.htonl
+    htons=WS2_32.htons
+    inet_addr=WS2_32.inet_addr
+    inet_ntoa=WS2_32.inet_ntoa
+    ioctlsocket=WS2_32.ioctlsocket
+    listen=WS2_32.listen
+    ntohl=WS2_32.ntohl
+    ntohs=WS2_32.ntohs
+    recv=WS2_32.recv
+    recvfrom=WS2_32.recvfrom
+    send=WS2_32.send
+    sendto=WS2_32.sendto
+    setsockopt=WS2_32.setsockopt
+    shutdown=WS2_32.shutdown
+    socket=WS2_32.socket

@@ -1,0 +1,17 @@
+LIBRARY "bcryptprimitives"
+EXPORTS
+    ; === 我们自己实现的函数 ===
+    ProcessPrng
+    ProcessPrngGuid
+
+    ; === 以下全部转发给系统原版 bcryptprimitives.dll ===
+    ; (已复制为 bcryptprimitives_orig.dll 放在 EXE 同目录)
+    GetAsymmetricEncryptionInterface=bcryptprimitives_orig.GetAsymmetricEncryptionInterface
+    GetCipherInterface=bcryptprimitives_orig.GetCipherInterface
+    GetHashInterface=bcryptprimitives_orig.GetHashInterface
+    GetKeyDerivationInterface=bcryptprimitives_orig.GetKeyDerivationInterface
+    GetKeyEncapsulationInterface=bcryptprimitives_orig.GetKeyEncapsulationInterface
+    GetRngInterface=bcryptprimitives_orig.GetRngInterface
+    GetSecretAgreementInterface=bcryptprimitives_orig.GetSecretAgreementInterface
+    GetSignatureInterface=bcryptprimitives_orig.GetSignatureInterface
+    MSCryptConvertRsaPrivateBlobToFullRsaBlob=bcryptprimitives_orig.MSCryptConvertRsaPrivateBlobToFullRsaBlob

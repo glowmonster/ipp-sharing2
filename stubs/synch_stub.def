@@ -1,0 +1,59 @@
+LIBRARY "api-ms-win-core-synch-l1-2-0"
+EXPORTS
+    ; === 我们的 3 个桩函数（C 代码里实现）===
+    WaitOnAddress
+    WakeByAddressAll
+    WakeByAddressSingle
+
+    ; === 以下全部转发给 kernel32.dll ===
+    ; （Win7 系统版该 DLL 的所有其他导出）
+    AcquireSRWLockExclusive=KERNEL32.AcquireSRWLockExclusive
+    AcquireSRWLockShared=KERNEL32.AcquireSRWLockShared
+    CancelWaitableTimer=KERNEL32.CancelWaitableTimer
+    CreateEventA=KERNEL32.CreateEventA
+    CreateEventExA=KERNEL32.CreateEventExA
+    CreateEventExW=KERNEL32.CreateEventExW
+    CreateEventW=KERNEL32.CreateEventW
+    CreateMutexA=KERNEL32.CreateMutexA
+    CreateMutexExA=KERNEL32.CreateMutexExA
+    CreateMutexExW=KERNEL32.CreateMutexExW
+    CreateMutexW=KERNEL32.CreateMutexW
+    CreateSemaphoreExW=KERNEL32.CreateSemaphoreExW
+    CreateWaitableTimerExW=KERNEL32.CreateWaitableTimerExW
+    DeleteCriticalSection=KERNEL32.DeleteCriticalSection
+    EnterCriticalSection=KERNEL32.EnterCriticalSection
+    GetLastError=KERNEL32.GetLastError
+    InitializeCriticalSection=KERNEL32.InitializeCriticalSection
+    InitializeCriticalSectionAndSpinCount=KERNEL32.InitializeCriticalSectionAndSpinCount
+    InitializeCriticalSectionEx=KERNEL32.InitializeCriticalSectionEx
+    InitializeSRWLock=KERNEL32.InitializeSRWLock
+    InitOnceBeginInitialize=KERNEL32.InitOnceBeginInitialize
+    InitOnceComplete=KERNEL32.InitOnceComplete
+    InitOnceExecuteOnce=KERNEL32.InitOnceExecuteOnce
+    InitOnceInitialize=KERNEL32.InitOnceInitialize
+    LeaveCriticalSection=KERNEL32.LeaveCriticalSection
+    OpenEventA=KERNEL32.OpenEventA
+    OpenEventW=KERNEL32.OpenEventW
+    OpenMutexW=KERNEL32.OpenMutexW
+    OpenSemaphoreW=KERNEL32.OpenSemaphoreW
+    OpenWaitableTimerW=KERNEL32.OpenWaitableTimerW
+    ReleaseMutex=KERNEL32.ReleaseMutex
+    ReleaseSRWLockExclusive=KERNEL32.ReleaseSRWLockExclusive
+    ReleaseSRWLockShared=KERNEL32.ReleaseSRWLockShared
+    ReleaseSemaphore=KERNEL32.ReleaseSemaphore
+    ResetEvent=KERNEL32.ResetEvent
+    SetCriticalSectionSpinCount=KERNEL32.SetCriticalSectionSpinCount
+    SetEvent=KERNEL32.SetEvent
+    SetWaitableTimer=KERNEL32.SetWaitableTimer
+    SetWaitableTimerEx=KERNEL32.SetWaitableTimerEx
+    Sleep=KERNEL32.Sleep
+    SleepConditionVariableCS=KERNEL32.SleepConditionVariableCS
+    SleepConditionVariableSRW=KERNEL32.SleepConditionVariableSRW
+    SleepEx=KERNEL32.SleepEx
+    TryAcquireSRWLockExclusive=KERNEL32.TryAcquireSRWLockExclusive
+    TryAcquireSRWLockShared=KERNEL32.TryAcquireSRWLockShared
+    TryEnterCriticalSection=KERNEL32.TryEnterCriticalSection
+    WaitForMultipleObjects=KERNEL32.WaitForMultipleObjects
+    WaitForMultipleObjectsEx=KERNEL32.WaitForMultipleObjectsEx
+    WaitForSingleObject=KERNEL32.WaitForSingleObject
+    WaitForSingleObjectEx=KERNEL32.WaitForSingleObjectEx
